@@ -1,0 +1,22 @@
+$base-color: #44546A;
+$technology-skills-img-size: 5rem;
+
+.personal-informations{
+    background-color: $base-color;
+}
+
+.technology-skills{
+    
+    .front-end{
+        img{
+            width: $technology-skills-img-size;
+            height: auto;
+        }
+    }
+    .back-end{
+        img{
+            width: $technology-skills-img-size;
+            height: auto;
+        }
+    }
+}
