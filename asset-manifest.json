@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/martin_bacsur.me/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/martin_bacsur.me/static/js/main.ef2eb3a7.chunk.js",
+    "main.js.map": "/martin_bacsur.me/static/js/main.ef2eb3a7.chunk.js.map",
+    "runtime-main.js": "/martin_bacsur.me/static/js/runtime-main.1eb6aa85.js",
+    "runtime-main.js.map": "/martin_bacsur.me/static/js/runtime-main.1eb6aa85.js.map",
+    "static/js/2.3e723d85.chunk.js": "/martin_bacsur.me/static/js/2.3e723d85.chunk.js",
+    "static/js/2.3e723d85.chunk.js.map": "/martin_bacsur.me/static/js/2.3e723d85.chunk.js.map",
+    "static/js/3.14099557.chunk.js": "/martin_bacsur.me/static/js/3.14099557.chunk.js",
+    "static/js/3.14099557.chunk.js.map": "/martin_bacsur.me/static/js/3.14099557.chunk.js.map",
+    "index.html": "/martin_bacsur.me/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/martin_bacsur.me/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.3e723d85.chunk.js.LICENSE.txt": "/martin_bacsur.me/static/js/2.3e723d85.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1eb6aa85.js",
+    "static/js/2.3e723d85.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.ef2eb3a7.chunk.js"
+  ]
+}
