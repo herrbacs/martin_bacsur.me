@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import "./CV.scss";
 
 const CV = (props:any) => {
-  console.log(props)
-  const [textContent, setTextContent] = useState({});
+  const [textContent, setTextContent] = useState<any>(null);
 
   useEffect(() => {
     axios
@@ -13,7 +12,11 @@ const CV = (props:any) => {
       .then(async (res) => {
         await setTextContent(res.data);
         //TODO Delete clg
-        console.log(res.data);
+
+        const selectedLanguage = await props.global.languageSetting
+        console.log(selectedLanguage === "eng" ? res.data.eng : res.data.hun);
+        setTextContent(selectedLanguage === "eng" ? res.data.eng : res.data.hun)
+
       });
   }, []);
 
@@ -47,7 +50,7 @@ const CV = (props:any) => {
       <div className="main-informations">
         <div className="header">
           <h1>bacsur martin</h1>
-          <h4>Full Stack Webfejlesztő</h4>
+          <h4>{textContent.title}</h4>
         </div>
         <div className="work-experiencee">
           <h3>szakmai tapasztalatok</h3>

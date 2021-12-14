@@ -1,7 +1,7 @@
 import { GET_LANGUAGE_SETTING, globalReducerActionType } from "./globalTypes";
 
 const initialState = {
-  languageSetting: "ENG",
+  languageSetting: "hun",
 }
 
 export const globalReducer = (state : any = initialState, action: globalReducerActionType) => {
