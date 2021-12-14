@@ -1,6 +1,21 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import "./CV.scss";
 
 const CV = () => {
+
+const [textContent, setTextContent] = useState({})
+
+useEffect(() => {
+  axios.get(`${process.env.PUBLIC_URL}/cv/cv_text_content.json`)
+  .then(async(res) => {
+    await setTextContent(res.data)
+    //TODO Delete clg
+    console.log(res.data)
+  })
+  
+}, [])
+
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       <div className={"personal-informations"}>
