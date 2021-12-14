@@ -25,15 +25,16 @@ const CV = (props: any) => {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ display: "flex", flexDirection: "row", height: '100%'}}>
       {textContent ? (
         <>
           <div className={"personal-informations"}>
-            <div>
+            <div className="me-picture-holder">
               <img src={`${process.env.PUBLIC_URL}/cv/me.png`} alt="" />
             </div>
             <div className="arrow-decoration"></div>
             <div className="about-me">
+              <h3>Rólam</h3>
               <p>
                 Szenvedélyes szegedi fejlesztőként imádok web technológiákkal
                 foglalkozni, alig várom hogy minden nap fejlődjek bennük.
