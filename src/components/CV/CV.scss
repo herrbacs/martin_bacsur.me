@@ -6,11 +6,11 @@ $technology-skills-img-size: 5rem;
     background-color: $base-blue-color;
     display: flex;
     flex-direction: column;
-    max-width: 25rem;
+    max-width: 20rem;
     height: 100%;
     .me-picture-holder {
-        width: 17rem;
-        margin:  1rem auto;
+        width: 15rem;
+        margin:  .5rem auto;
         img {
             width: 100%;
             height: auto;
@@ -18,7 +18,7 @@ $technology-skills-img-size: 5rem;
     }
 
     .arrow-decoration{
-        margin: -4rem auto 1rem auto;
+        margin: -3.5rem auto .5rem auto;
         background-color: $base-white-color;
         height: 13rem;
         width: 100%;
@@ -36,7 +36,7 @@ $technology-skills-img-size: 5rem;
             border-bottom: 5px solid #D5DCE4;
         }
         p{
-            font-size: 1.3rem;
+            font-size: .9rem;
             margin: 1rem auto;
             text-align: justify;
             font-weight: 600;
