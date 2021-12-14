@@ -1,20 +1,21 @@
 import axios from "axios";
+import { connect } from 'react-redux'
 import { useEffect, useState } from "react";
 import "./CV.scss";
 
-const CV = () => {
+const CV = (props:any) => {
+  console.log(props)
+  const [textContent, setTextContent] = useState({});
 
-const [textContent, setTextContent] = useState({})
-
-useEffect(() => {
-  axios.get(`${process.env.PUBLIC_URL}/cv/cv_text_content.json`)
-  .then(async(res) => {
-    await setTextContent(res.data)
-    //TODO Delete clg
-    console.log(res.data)
-  })
-  
-}, [])
+  useEffect(() => {
+    axios
+      .get(`${process.env.PUBLIC_URL}/cv/cv_text_content.json`)
+      .then(async (res) => {
+        await setTextContent(res.data);
+        //TODO Delete clg
+        console.log(res.data);
+      });
+  }, []);
 
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
@@ -111,4 +112,16 @@ useEffect(() => {
   );
 };
 
-export default CV;
+const mapStateToProps = (state:any) => {
+  return {
+    global: state.global,
+  };
+};
+const mapDispatchToProps = (dispatch:any) => {
+  return {};
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CV);
