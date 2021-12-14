@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/martin_bacsur.me/static/css/main.84f8f913.chunk.css",
-    "main.js": "/martin_bacsur.me/static/js/main.03fdc6af.chunk.js",
-    "main.js.map": "/martin_bacsur.me/static/js/main.03fdc6af.chunk.js.map",
+    "main.css": "/martin_bacsur.me/static/css/main.42937358.chunk.css",
+    "main.js": "/martin_bacsur.me/static/js/main.a71b9352.chunk.js",
+    "main.js.map": "/martin_bacsur.me/static/js/main.a71b9352.chunk.js.map",
     "runtime-main.js": "/martin_bacsur.me/static/js/runtime-main.69df9a5f.js",
     "runtime-main.js.map": "/martin_bacsur.me/static/js/runtime-main.69df9a5f.js.map",
     "static/js/2.4861e9f5.chunk.js": "/martin_bacsur.me/static/js/2.4861e9f5.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.fb883f2f.chunk.js": "/martin_bacsur.me/static/js/3.fb883f2f.chunk.js",
     "static/js/3.fb883f2f.chunk.js.map": "/martin_bacsur.me/static/js/3.fb883f2f.chunk.js.map",
     "index.html": "/martin_bacsur.me/index.html",
-    "static/css/main.84f8f913.chunk.css.map": "/martin_bacsur.me/static/css/main.84f8f913.chunk.css.map",
+    "static/css/main.42937358.chunk.css.map": "/martin_bacsur.me/static/css/main.42937358.chunk.css.map",
     "static/js/2.4861e9f5.chunk.js.LICENSE.txt": "/martin_bacsur.me/static/js/2.4861e9f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69df9a5f.js",
     "static/js/2.4861e9f5.chunk.js",
-    "static/css/main.84f8f913.chunk.css",
-    "static/js/main.03fdc6af.chunk.js"
+    "static/css/main.42937358.chunk.css",
+    "static/js/main.a71b9352.chunk.js"
   ]
 }
