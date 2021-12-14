@@ -77,8 +77,8 @@ const CV = () => {
           </div>
         </div>
         <div className="education">
-        <h3>2019-2021</h3>
-        <span>Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar</span>
+          <h3>2019-2021</h3>
+          <span>Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar</span>
         </div>
         <div className="language">
           <h3>back-end</h3>
@@ -86,10 +86,10 @@ const CV = () => {
           <span>Programtervező Informatikus Fejlesztő</span>
         </div>
         <div className="hobbies">
-            <span>Motorozás</span>
-            <span>Sportolás</span>
-            <span>Közös Időtöltés Családdal, Barátokkal</span>
-            <span>Olvasás, Önfejlesztés</span>
+          <span>Motorozás</span>
+          <span>Sportolás</span>
+          <span>Közös Időtöltés Családdal, Barátokkal</span>
+          <span>Olvasás, Önfejlesztés</span>
         </div>
       </div>
     </div>
