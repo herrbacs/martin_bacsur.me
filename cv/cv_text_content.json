@@ -1,56 +1,50 @@
 {
     "hun":{
-        "aboutMe":[
-            "Szenvedélyes szegedi fejlesztőként imádok web technológiákkal foglalkozni, alig várom hogy minden nap fejlődjek bennük.",
-            "Nagyon szeretek csapatban dolgozni, de egyedül is helytállok a kihívásokkal szemben.",
-            "Szeretem ahogy a terveket követve valami alakul a kezem alatt, de ha a váratlan keresztül húzza a számításokat, akkor sem esem kétségbe.",
-            "Produktív munkavégzést szemelőt tartva, bátran kérek segítséget csapattársaimtól, kollégáimtól."
-        ]
-     
-        ,
+        "name":"bacsur martin",
+        "aboutMe":{
+            "title":"Rólam",
+            "content":[
+                "Szenvedélyes szegedi fejlesztőként imádok web technológiákkal foglalkozni, alig várom hogy minden nap fejlődjek bennük.",
+                "Nagyon szeretek csapatban dolgozni, de egyedül is helytállok a kihívásokkal szemben.",
+                "Szeretem ahogy a terveket követve valami alakul a kezem alatt, de ha a váratlan keresztül húzza a számításokat, akkor sem esem kétségbe.",
+                "Produktív munkavégzést szemelőt tartva, bátran kérek segítséget csapattársaimtól, kollégáimtól."
+            ]
+        },
         "title":"Full Stack Webfejlesztő",
         "workExperience" : {
             "inJobExperience" : {
                 "title":"szakmai tapasztalatok",
                 "content":[
-                    "Szeged Sunilium Kft. :",
-                    "Szakmai gyakorlat - full stack .NET fejlesztő"
+                    "Szeged - Sunilium Kft. :",
+                    "Szakmai gyakorlat - full stack .NET Webfejlesztő",
+                    "Szeged - Zengo Kft. :",
+                    "React Webfejlesztő"
                 ]
             },
            "firstHandExperience":{
                "title": "Egyéni Projektek:",
-                "content" : ["www.docutrend.hu"]
+                "content" : [
+                    {"title":"www.docutrend.hu", "link":"https://www.docutrend.hu/"}
+                ]
            }
         },
-        "technologySkills" : {
-            "frontend":[
-                "Javascript",
-                "Typescript",
-                "RectJs",
-                "jQurey",
-                "Sass Script"
-            ],
-            "backend":[
-                "Node",
-                ".Net Core",
-                "mySql"
+        "technologySkills":"Ismeretek",
+        "education":{
+            "title":"Tanulmányok",
+            "content":[
+                {
+                    "date":"2019-2021",
+                    "school":"Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar",
+                    "faculty" : "Programtervető Informatikus Fejlesztő"
+                }
             ]
         },
-        "education":{
-            "1":{
-                "date":"2019-2021",
-                "school":"Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar",
-                "major" : "Programtervető Informatikus Fejlesztő"
-            }
-        },
-        "hobbies":[
-            "Motorozás",
-            "Sportolás",
-            "Közös Időtöltés Családdal, Barátokkal",
-            "Olvasás, Önfejlesztés"
-        ]
+        "language":{
+            "title" : "Nyelvismeretek",
+            "content":[
+                "B2 Angol - Középfok/Általános kommunikáció szint"
+            ]
+        }
     },
-    "eng":{
-        
-    }
+    "eng":{}
 }
