@@ -15,23 +15,29 @@
             "inJobExperience" : {
                 "title":"szakmai tapasztalatok",
                 "content":[
-                    "Szeged Sunilium Kft. :",
-                    "Szakmai gyakorlat - full stack .NET fejlesztő"
+                    "Szeged - Sunilium Kft. :",
+                    "Szakmai gyakorlat - full stack .NET Webfejlesztő",
+                    "Szeged - Zengo Kft. :",
+                    "React Webfejlesztő"
                 ]
             },
            "firstHandExperience":{
                "title": "Egyéni Projektek:",
-                "content" : ["www.docutrend.hu"]
+                "content" : [
+                    {"title":"www.docutrend.hu", "link":"https://www.docutrend.hu/"}
+                ]
            }
         },
         "technologySkills":"Ismeretek",
         "education":{
             "title":"Tanulmányok",
-            "first":{
-                "date":"2019-2021",
-                "school":"Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar",
-                "faculty" : "Programtervető Informatikus Fejlesztő"
-            }
+            "content":[
+                {
+                    "date":"2019-2021",
+                    "school":"Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar",
+                    "faculty" : "Programtervető Informatikus Fejlesztő"
+                }
+            ]
         },
         "language":{
             "title" : "Nyelvismeretek",

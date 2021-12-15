@@ -3,15 +3,13 @@ import { connect } from "react-redux";
 import { useEffect, useState } from "react";
 import "./CV.scss";
 import { LoadingModal } from "../SupportComponents/LoadingModal/LoadingModal";
-import { text } from "@fortawesome/fontawesome-svg-core";
-
+import { Link } from "react-router-dom";
 const CV = (props: any) => {
   const [textContent, setTextContent] = useState<any>(null);
   useEffect(() => {
     axios
       .get(`${process.env.PUBLIC_URL}/cv/cv_text_content.json`)
       .then(async (res) => {
-        console.log(res.data.hun.technologySkills);
         await setTextContent(
           props.global.languageSetting === "eng" ? res.data.eng : res.data.hun
         );
@@ -46,30 +44,48 @@ const CV = (props: any) => {
               <h1>bacsur martin</h1>
               <h4>{textContent.title}</h4>
             </div>
-            <div className="work-experiencee">
-              <h3>{textContent.workExperience.inJobExperience.title}</h3>
+            <div className="work-experience">
+              <h3 className="cv-content-title">
+                {textContent.workExperience.inJobExperience.title}
+              </h3>
               {textContent.workExperience.inJobExperience.content.map(
                 (exp: string, i: number) => {
                   return (
-                    <span key={i} className={i % 2 !== 0 ? "company" : "job"}>
+                    <span key={i} className={i % 2 === 0 ? "company" : "job"}>
                       {exp}
                     </span>
                   );
                 }
               )}
 
-              <h3>{textContent.workExperience.firstHandExperience.title}</h3>
+              <span
+                className="company"
+                style={{ margin: ".1rem auto .1rem 4rem" }}
+              >
+                {textContent.workExperience.firstHandExperience.title}
+              </span>
               {textContent.workExperience.firstHandExperience.content.map(
-                (exp: string, i: number) => {
-                  return <span key={i}>{exp}</span>;
+                (exp: any, i: number) => {
+                  return (
+                    <a
+                      style={{ cursor: "pointer" }}
+                      className="firsthand-job"
+                      key={i}
+                      href={`${exp.link}`}
+                      target="_blank"
+                    >
+                      {exp.title}
+                    </a>
+                  );
                 }
               )}
             </div>
             <div className="technology-skills">
-              <h3>{textContent.technologySkills}</h3>
+              <h3 className="cv-content-title">
+                {textContent.technologySkills}
+              </h3>
               <div className="front-end">
-                <h3>front-end</h3>
-
+                <h3 className="development-side">front-end</h3>
                 <img
                   src={`${process.env.PUBLIC_URL}/cv/frontend/js.png`}
                   alt="Javascript"
@@ -92,7 +108,7 @@ const CV = (props: any) => {
                 />
               </div>
               <div className="back-end">
-                <h3>back-end</h3>
+                <h3 className="development-side">back-end</h3>
                 <img
                   src={`${process.env.PUBLIC_URL}/cv/backend/node.png`}
                   alt="Node"
@@ -108,19 +124,28 @@ const CV = (props: any) => {
               </div>
             </div>
             <div className="education">
-              <h3>{textContent.education.title}</h3>
-              <h3>{textContent.education.first.date}</h3>
-              <span>{textContent.education.first.school}</span>
-              <span>{textContent.education.first.faculty}</span>
+              <h3 className="cv-content-title">
+                {textContent.education.title}
+              </h3>
+              {textContent.education.content.map((education: any) => {
+                return (
+                  <>
+                    <h3 className="education-date">{education.date}</h3>
+                    <span className="education-school">{education.school}</span>
+                    <span>{education.faculty}</span>
+                  </>
+                );
+              })}
             </div>
             <div className="language">
-              <h3>{textContent.language.title}</h3>
-              {textContent.language.content.map(
-                (lang:any) => {
-                  return (<span>{lang}</span>)
-                }
-              )}
+              <h3 className="cv-content-title">{textContent.language.title}</h3>
+              {textContent.language.content.map((lang: any) => {
+                return <span>{lang}</span>;
+              })}
             </div>
+            {/* <div>
+                <h3 className="cv-content-title">Skills</h3>
+            </div> */}
           </div>
         </>
       ) : (
