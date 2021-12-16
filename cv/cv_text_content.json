@@ -29,20 +29,14 @@
            }
         },
         "technologySkills":"Ismeretek",
-        "education":{
-            "title":"Tanulmányok",
+        "skills":{
+            "title": "Tapasztalat",
             "content":[
-                {
-                    "date":"2019-2021",
-                    "school":"Szegedi Tudományegyetem - Juhász Gyula Pedagógusképző Kar",
-                    "faculty" : "Programtervető Informatikus Fejlesztő"
-                }
-            ]
-        },
-        "language":{
-            "title" : "Nyelvismeretek",
-            "content":[
-                "B2 Angol - Középfok/Általános kommunikáció szint"
+                {"name":"Javascript", "percent":"65"},
+                {"name":"Typescript", "percent":"38"},
+                {"name":"ReactJs", "percent":"78"},
+                {"name":"Node", "percent":"18"},
+                {"name":".Net Core", "percent":"25"}
             ]
         }
     },
