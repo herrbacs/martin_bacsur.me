@@ -4,29 +4,48 @@
 $base-blue-color: #44546a;
 $base-white-color: #fff;
 
+.cv-container{
+    display: flex; 
+    flex-direction: row;
+    height: 100%; 
+    width: 60rem;
+    position: relative; 
+    margin: 0 auto
+}
+
 .personal-informations {
+    position: relative;
     background-color: $base-blue-color;
     display: flex;
     flex-direction: column;
-    max-width: 20rem;
+    width: 18rem;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     .me-picture-holder {
-        width: 15rem;
-        margin: 0.5rem auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: .5rem auto;
+        width: 11rem;
+        height: 11rem;
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        
-        
         overflow: hidden;
+
         img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
+            transform: scale(1.1);
         }
     }
 
     .arrow-decoration {
-        margin: -3.5rem auto 0.5rem auto;
+        margin: 9rem auto 0.5rem auto;
         background-color: $base-white-color;
-        height: 13rem;
+        height: 8rem;
         width: 100%;
         clip-path: polygon(0 0, 0 15%, 50% 100%, 100% 15%, 100% 0, 50% 80%);
     }
@@ -38,11 +57,11 @@ $base-white-color: #fff;
 
         h3 {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 2rem;
+            font-size: 1.3rem;
             border-bottom: 5px solid #d5dce4;
         }
         p {
-            font-size: 0.9rem;
+            font-size: calc(1rem * 0.75);
             margin: 1rem auto;
             text-align: justify;
             font-weight: 600;
@@ -55,10 +74,9 @@ $base-white-color: #fff;
     flex-direction: column;
     margin: 0.4rem;
     width: 100%;
-    max-width: 45rem;
     .header {
         width: 100%;
-        height: 7.5rem;
+        height: 6.5rem;
         background-color: $base-blue-color;
         color: $base-white-color;
         display: flex;
@@ -68,13 +86,13 @@ $base-white-color: #fff;
 
         h1 {
             font-family: "Open Sans Condensed", sans-serif;
-            font-size: 3rem;
+            font-size: 2.7rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         h4 {
             font-family: Calibri, "Trebuchet MS", sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 400;
         }
     }
@@ -82,7 +100,7 @@ $base-white-color: #fff;
     .cv-content-title {
         font-family: Calibri, "Trebuchet MS", sans-serif;
         margin: .5rem auto 0.5rem 5px;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: 400;
         text-transform: uppercase;
         color: $base-blue-color;
@@ -96,12 +114,13 @@ $base-white-color: #fff;
         flex-direction: column;
 
         .company {
-            margin: 0.3rem auto 0 4rem;
-            font-size: 1.2rem;
+            margin: 0 auto 0 4rem;
+            font-size: 1rem;
             font-weight: 400;
         }
         .job {
             margin: 0 auto 0.1rem 8rem;
+            font-size: .9rem;
         }
 
         .firsthand-job {
@@ -115,36 +134,24 @@ $base-white-color: #fff;
 
     .technology-skills {
         img {
-            width: 4rem;
+            width: 3.5rem;
             height: auto;
-            margin: 0 1rem;
+            margin: 0 .8rem;
         }
 
         .development-side{
             font-family: Calibri, "Trebuchet MS", sans-serif;
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-size: 1rem;
+            font-weight: 600;
             text-transform: uppercase;
             color: $base-blue-color;
             width: 100%;
         }
     }
 
-    .education{
+    .skills{
         display: flex;
         flex-direction: column;
-
-        .education-date{
-            font-family: Calibri, "Trebuchet MS", sans-serif;
-            font-size: 1.4rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: $base-blue-color;
-            width: 100%;
-        }
-
-        .education-school{
-            font-weight: bold;
-        }
+        height: 100%;
     }
 }

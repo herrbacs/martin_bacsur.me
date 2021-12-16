@@ -3,20 +3,22 @@ import { connect } from "react-redux";
 import { useEffect, useState } from "react";
 import "./CV.scss";
 import { LoadingModal } from "../SupportComponents/LoadingModal/LoadingModal";
-import { Link } from "react-router-dom";
+import ChartHorizontalLine from "../SupportComponents/ChartHorizontalLine/ChartHorizontalLine";
+
 const CV = (props: any) => {
   const [textContent, setTextContent] = useState<any>(null);
   useEffect(() => {
     axios
       .get(`${process.env.PUBLIC_URL}/cv/cv_text_content.json`)
       .then(async (res) => {
+        console.log(res.data)
         await setTextContent(
           props.global.languageSetting === "eng" ? res.data.eng : res.data.hun
         );
       });
   }, [props.global.languageSetting]);
   return (
-    <div style={{ display: "flex", flexDirection: "row", height: "100%" }}>
+    <div className="cv-container">
       {textContent ? (
         <>
           <div className={"personal-informations"}>
@@ -123,29 +125,13 @@ const CV = (props: any) => {
                 />
               </div>
             </div>
-            <div className="education">
+            <div className="skills">
               <h3 className="cv-content-title">
-                {textContent.education.title}
+                {textContent.skills.title}
               </h3>
-              {textContent.education.content.map((education: any) => {
-                return (
-                  <>
-                    <h3 className="education-date">{education.date}</h3>
-                    <span className="education-school">{education.school}</span>
-                    <span>{education.faculty}</span>
-                  </>
-                );
-              })}
+              <ChartHorizontalLine data={textContent.skills.content}></ChartHorizontalLine>
             </div>
-            <div className="language">
-              <h3 className="cv-content-title">{textContent.language.title}</h3>
-              {textContent.language.content.map((lang: any) => {
-                return <span>{lang}</span>;
-              })}
-            </div>
-            {/* <div>
-                <h3 className="cv-content-title">Skills</h3>
-            </div> */}
+
           </div>
         </>
       ) : (
